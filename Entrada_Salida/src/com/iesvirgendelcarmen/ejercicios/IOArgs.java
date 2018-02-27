@@ -1,4 +1,4 @@
-package com.iesvirgendelcarmen.com.ejercicios;
+package com.iesvirgendelcarmen.ejercicios;
 
 import java.io.File;
 import java.io.FileInputStream;
