@@ -10,8 +10,7 @@ public class PruebaStreamConBuffer {
 	public static void main(String[] args) {
 		try (FileInputStream inFileInputStream = new FileInputStream("ficheros\\numeros.txt");){
 			long starTime = System.nanoTime();
-			int byteLeido;
-			while((byteLeido=inFileInputStream.read())!=-1) {
+			while((inFileInputStream.read())!=-1) {
 				
 			}
 			long stopTime = System.nanoTime();
@@ -29,8 +28,7 @@ public class PruebaStreamConBuffer {
 				(new FileInputStream("ficheros\\numeros.txt"));){
 				
 			long starTime = System.nanoTime();
-			int byteLeido;
-			while((byteLeido=bufferedInputStream.read())!=-1) {
+			while((bufferedInputStream.read())!=-1) {
 				
 			}
 			long stopTime = System.nanoTime();
