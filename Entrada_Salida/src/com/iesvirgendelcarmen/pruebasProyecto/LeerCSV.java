@@ -15,7 +15,7 @@ public class LeerCSV {
 	      
 	      try {
 	         
-	         br =new BufferedReader(new FileReader("ficheros/geografia.csv"));
+	         br =new BufferedReader(new FileReader("ficheros/Libros.csv"));
 	         String line = br.readLine();
 	         while (null!=line) {
 	            String [] fields = line.split(SEPARATOR);
