@@ -11,10 +11,12 @@ public class Ejercicio2Output {
 	public static void main(String[] args) {
 		try (DataOutputStream output = new DataOutputStream(
 				new BufferedOutputStream(
-						new FileOutputStream("ficheros\\ejercicios\\ejercicio2.txt")));) {
+						new FileOutputStream("ficheros\\ejercicios\\ejercicio2.dat")));) {
 			for (int i = 0; i < 100; i++) {
 				output.writeFloat((float)(Math.random()*100));;
 			}
+			output.flush();
+			System.out.println("Fichero creado.");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
