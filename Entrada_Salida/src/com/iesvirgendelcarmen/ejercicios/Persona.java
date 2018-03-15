@@ -7,12 +7,22 @@ public class Persona implements Serializable {
 	private String apellidos;
 	private int edad;
 	private String direccion;
+	private int cuentaPersonas=0;
 	
+	public int getCuentaPersonas() {
+		return cuentaPersonas;
+	}
+
+	public void setCuentaPersonas(int cuentaPersonas) {
+		this.cuentaPersonas = cuentaPersonas;
+	}
+
 	public Persona(String nombre, String apellidos, int edad, String direccion) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.edad = edad;
 		this.direccion = direccion;
+		cuentaPersonas++;
 	}
 
 	public String getNombre() {
