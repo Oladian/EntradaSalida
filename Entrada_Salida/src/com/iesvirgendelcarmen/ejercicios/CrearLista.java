@@ -10,7 +10,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.print.attribute.standard.PrinterState;
 
 public class CrearLista {
 // crear lista dinamica de floats, un metodo generarFloats() con argumento
